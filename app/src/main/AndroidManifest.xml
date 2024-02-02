@@ -13,10 +13,6 @@
         android:theme="@style/Theme.BMICalculator"
         tools:targetApi="31">
         <activity
-            android:name=".Offer"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -26,5 +22,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

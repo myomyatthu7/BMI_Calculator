@@ -17,12 +17,7 @@ class MainActivity : AppCompatActivity() {
         val edHeight = findViewById<EditText>(R.id.edHeight)
         val tvResult = findViewById<TextView>(R.id.tvResult)
         val tvRange = findViewById<TextView>(R.id.tvRange)
-       // val btnOffer = findViewById<Button>(R.id.btnOffer)
         val btnCalculate = findViewById<Button>(R.id.btnCalculate)
-//        btnOffer.setOnClickListener {
-//            val intent = Intent(this,Offer::class.java)
-//            startActivity(intent)
-//        }
         btnCalculate.setOnClickListener {
                 val weight = edWeight?.text.toString()
                 val height = edHeight?.text.toString()
@@ -32,11 +27,8 @@ class MainActivity : AppCompatActivity() {
                         val bmi2Digit = String.format("%.2f", bmi).toFloat()
                         tvResult.text = bmi2Digit.toString()
                         displayResult(bmi2Digit)
-//            val normalRange = "Normal range is Between 18.5 and 25"
-//            tvRange.text = normalRange
                         tvRange.visibility = VISIBLE
                     } catch (e: Exception) {
-                        //Log.i("E",e.message.toString())
                         nullMessage()
                     }
             }
