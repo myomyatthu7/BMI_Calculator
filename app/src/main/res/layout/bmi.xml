@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/normal"
+        android:layout_margin="20dp"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="wrap_content"
+                android:ems="5"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+            <TextView
+                android:text="Cm"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/etHeight"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/normal"
+        android:layout_margin="20dp"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="wrap_content"
+                android:ems="5"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+            <TextView
+                android:text="Cm"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/etWeight"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView3"
+        android:backgroundTint="@color/overWeight"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="32dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="11">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_horizontal|top"
+                android:textAlignment="gravity"
+                android:textColor="#1D5F03"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal|top"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="#464B7F"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:id="@+id/tvRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text='"Normal range is Between 18.5 and 25"'
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="#8B8EA8"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                 />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
